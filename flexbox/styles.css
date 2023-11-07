@@ -1,0 +1,51 @@
+/*
+
+RESUMO DE FLEX BOX:
+
+ DISPLAY: FLEX- INICIA O FLAX NO CONTAINER
+ FLEX-GROW-  DA TAMANHO AO ELEMNTO PREENCHENDO OS ESPAÇOS VAZIOS.
+ FLEX-SHRRINK- O CONTRARIO DO GROW.
+ FLEX-BASIS - TAMANHO INICIAL DO ELEMENTO, E O RESTO É PREENCHIDO PELO GROW.
+ FLEX- <GROW> <SHRINK> <BASIS>
+ FLEX-DIRECTION- MUDA A DIREÇÃO QUE OS ELEMENTOS ESTÃO(ROW, COLUMN)
+ FLEX ORDER - MUDA A ORDEM DO ELEMENTO INDIVIDUALMENTE.
+ JUSTIFY-CONTENT - ALINHA OS ELEMENTOS NO EIXO SECUNDARIO.
+ ALIGN-INTEMS- ALINHA OS ELEMENTOS NO EIXO SECUNDARIO.
+ ALIGN-SELF- ALINHA O ELEMENTO EM PARTICULAR.
+
+*/
+
+body{
+    background-color: #ddd;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    justify-content: center ;
+    align-items: center;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+   /* flex: 1 1 300px; */
+    /* flex: <grow> <shrink> <basis>; */
+}
+
+.first{
+    background-color: red;
+    align-self: flex-start ;
+
+}
+
+.second {
+    background-color: green;
+align-self: flex-end ;
+}
+.third{
+    background-color: blue;
+
+}
